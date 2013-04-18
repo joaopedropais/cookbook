@@ -12,13 +12,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class RecipeController {
   
+	
+	
     @RequestMapping(method=RequestMethod.GET, value="/recipes")
     public String listRecipes(Model model) {
 
         List<String> values = new ArrayList<String>();
-        values.add("Ola");
-        values.add("Mundo");        
-        model.addAttribute("items", values);
+        values.add("Lista de Receitas");
+      
+       
         
         return "listRecipes";
     }

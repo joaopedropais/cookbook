@@ -14,10 +14,7 @@ public class HomeController {
 	@RequestMapping(method=RequestMethod.GET, value="/")
 	public String showHome(Model model) {
 
-        Date date = new Date(System.currentTimeMillis());
-        DateFormat df = DateFormat.getDateInstance();
-        model.addAttribute("currentTime", df.format(date));
-	    
+     
 		return "home";
 	}
 

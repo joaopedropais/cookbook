@@ -4,13 +4,23 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Recipes</title>
+<title>Lista de Receitas</title>
 </head>
 <body>
 <ul>
-<c:forEach var="item" items='${items}'>
-	<li><c:out value="${item}"></c:out></li>
-</c:forEach>
+ <td>Nome da Receita</td>
+    <td><input type=text size=75 maxlength=76></td>
+  </tr>
+  <tr>
+  <br><br>
+    <td>Receita</td>
+    <td><input type=text size=90 maxlength=500></td>
+    
+<input type="submit" value="Enviar" /> 
+</form>
+    
+    
+ 
 </ul>
 </body>
 </html>

@@ -6,19 +6,13 @@
 <title>Homepage</title>
 </head>
 <body>
-
 	<b>COOKBOOK</b> <br><br><br>
-	 <style type="text/css">
-  body {
-    color: purple;
-    background-color: #d9da5d }
-  </style>
 	
-	<br>
-	<a href="../.html">Criar Receita</a><br>
 	
-	<a href="RecipeController.html">Listar Receitas</a><br>
-	<a href="home.html">Ver Receita em Detalhe</a><br>
+	<?php
+$nome = $_POST['nome'];
+echo "Olá " . $name;
+?>
 	
 	
 	<br>
