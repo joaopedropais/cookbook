@@ -1,8 +1,7 @@
 # Grupo
-- 123456 David Martinho
-- 123456 David Martinho
-- 123456 David Martinho
-- 123456 David Martinho
+- 21201528 Ricardo Vinagre Sousa Ferreira
+-  joao pedro pais
+
 
 ## Changelog
 #### Versão 1.0:
