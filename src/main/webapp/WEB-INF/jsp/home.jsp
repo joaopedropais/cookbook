@@ -15,9 +15,8 @@
   </style>
 	
 	<br>
-	<a href="../.html">Criar Receita</a><br>
-	
-	<a href="RecipeController.html">Listar Receitas</a><br>
+	<a href="http://localhost:8080/crecipe">Criar Receita</a><br>
+	<a href="http://localhost:8080/recipes">Listar Receitas</a><br>
 	<a href="home.html">Ver Receita em Detalhe</a><br>
 	
 	

@@ -39,6 +39,15 @@ public class RecipeController {
 		}
     }
         
-    
+    @RequestMapping(method=RequestMethod.GET, value="/crecipe")
+    public String createRecipe(Model model) {
+
+        List<String> values = new ArrayList<String>();
+        values.add("Criar Receita");
+      
+       
+        
+        return "createRecipe";
+    }
     
 }
