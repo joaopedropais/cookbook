@@ -7,16 +7,34 @@
 <title>Criar Receita</title>
 </head>
 <body>
+	 <style type="text/css">
+  body {
+    color: purple;
+    background-color: #d9da5d }
+  </style>
+<form method="POST" action="/recipes">
 <ul>
- <td>Nome da Receita</td>
-    <td><input type=text size=75 maxlength=76></td>
+ <td>Titulo:</td>
+    <td><input type=text name="titulo" size=75 maxlength=76></td>
   </tr>
   <tr>
   <br><br>
-    <td>Receita</td>
-    <td><input type=text size=90 maxlength=500></td>
-    
-<input type="submit" value="Enviar" />
+ <td>Problema:</td>
+   <td><input type=text name="problema" size=90 maxlength=500></td>
+  </tr>
+  <tr>
+ <br><br>
+ <td>Solução:</td>
+    <td><input type=text name="solucao" size=75 maxlength=500></td>
+  </tr>
+  <tr>
+    <br><br>
+     <td>Nome do autor:</td>
+    <td><input type=text name ="autor" size=75 maxlength=76></td>
+  </tr>
+  <tr>
+  
+<input type="submit" value="Criar nova receita!" />
 </form>
 </ul>
 </body>

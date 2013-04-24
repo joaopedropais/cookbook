@@ -7,20 +7,13 @@
 <title>Lista de Receitas</title>
 </head>
 <body>
-<ul>
- <td>Nome da Receita</td>
-    <td><input type=text size=75 maxlength=76></td>
-  </tr>
-  <tr>
-  <br><br>
-    <td>Receita</td>
-    <td><input type=text size=90 maxlength=500></td>
-    
-<input type="submit" value="Enviar" /> 
-</form>
-    
-    
- 
-</ul>
+	 <style type="text/css">
+  body {
+    color: purple;
+    background-color: #d9da5d }
+  </style>
+<c:forEach var="recipe" items='${recipes}'>
+	<a href="/recipes/${recipe.id}">${recipe.titulo}</a><br/>
+</c:forEach>
 </body>
 </html>

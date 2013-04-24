@@ -4,22 +4,23 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Receitas</title>
+<title>Receita nrº ${recipe.id}</title>
 </head>
 <body>
-<ul>
-<c:forEach var="item" items='${items}'>
-	<li><c:out value="${item}"></c:out></li>
-	
-	 <td>Usuário</td>
-    <td><input type=text size=30 maxlength=50></td>
-  </tr>
-  <tr>
-    <td>Senha</td>
-    <td><input type=password size=6 maxlength=6></td>
-    
-</c:forEach>
-</ul>
-<img src="/static/cookbook.png" />
+	 <style type="text/css">
+  body {
+    color: purple;
+    background-color: #d9da5d }
+  </style>
+  
+<h2>${recipe.titulo}</h2>
+<b>Problema:</b>
+<p>${recipe.problema}</p>
+<b>Solução:</b>
+<p>${recipe.solucao}</p>
+<b>Nome do autor:</b>
+<p>${recipe.autor}</p>
+<b>Data da criação:</b>
+<p>${recipe.date}</p>
 </body>
 </html>

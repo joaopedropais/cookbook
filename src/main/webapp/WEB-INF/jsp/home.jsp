@@ -15,11 +15,8 @@
   </style>
 	
 	<br>
-	<a href="http://localhost:8080/crecipe">Criar Receita</a><br>
-	<a href="http://localhost:8080/recipes">Listar Receitas</a><br>
-	<a href="home.html">Ver Receita em Detalhe</a><br>
-	
-	
+	<a href="http://localhost:8080/recipes/create"> <img src="http://www.goldspace.com/groupmail/images/icon-create-send.png"/></a><br>
+<br><br>	<a href="http://localhost:8080/recipes">Listar Receitas</a><br>
 	<br>
 	
 	<br>
