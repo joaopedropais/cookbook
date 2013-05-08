@@ -1,5 +1,7 @@
 package pt.ulht.es.cookbook.domain;
 
+
+
 	public class Recipe {
 	
 	private String id;
@@ -7,12 +9,16 @@ package pt.ulht.es.cookbook.domain;
 	private String problema;
 	private String solucao;
 	private String autor; 
+	private String data;
 
-	public Recipe(String titulo, String problema, String solucao, String autor) {
+
+	public Recipe(String titulo, String problema, String solucao, String autor, String data) {
 		this.titulo = titulo;
 		this.problema= problema;
 		this.solucao= solucao;
 		this.autor= autor;
+		this.data= data;
+
 	}
 	
 	public String getTitulo() {
@@ -37,4 +43,9 @@ package pt.ulht.es.cookbook.domain;
 	 this.id=id;
 		
 	}
-}
+	
+	public String getData() {
+		return data;
+
+	}
+	}

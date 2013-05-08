@@ -20,7 +20,14 @@
 <p>${recipe.solucao}</p>
 <b>Nome do autor:</b>
 <p>${recipe.autor}</p>
-<b>Data da criação:</b>
-<p>${recipe.date}</p>
+<b>Data:</b>
+<p>${recipe.data}</p>
+
+
+
+<a href="http://localhost:8080"> <img src="http://www.canadiangeographic.ca/magazine/may13/map/images/return_to_article.png"/></a>
+<br> 
+<td>Voltar ao Menú Inicial:</td>
+</a>
 </body>
 </html>

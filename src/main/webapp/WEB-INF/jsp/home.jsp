@@ -15,8 +15,16 @@
   </style>
 	
 	<br>
-	<a href="http://localhost:8080/recipes/create"> <img src="http://www.goldspace.com/groupmail/images/icon-create-send.png"/></a><br>
-<br><br>	<a href="http://localhost:8080/recipes">Listar Receitas</a><br>
+	<a href="http://localhost:8080/recipes/create"> <img src="http://www.umassalumni.com/career/img/paper_and_pencil.png"/></a>
+	
+	<a href="http://localhost:8080/recipes"><img src="http://www.firststreetonline.com/content/cliponrdngglss_21085_200px_md.jpg"/></a>
+		<td>"Listar Receita":</td>
+		<br>
+	
+	<td>"Criar receita":</td>
+	
+	
+	 
 	<br>
 	
 	<br>

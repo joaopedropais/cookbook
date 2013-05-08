@@ -12,8 +12,18 @@
     color: purple;
     background-color: #d9da5d }
   </style>
+  
 <c:forEach var="recipe" items='${recipes}'>
 	<a href="/recipes/${recipe.id}">${recipe.titulo}</a><br/>
+	
+<br>
+
+
 </c:forEach>
+
+<a href="http://localhost:8080"> <img src="http://www.canadiangeographic.ca/magazine/may13/map/images/return_to_article.png"/></a>
+<br> 
+<td>Voltar ao Menú Inicial:</td>
+	
 </body>
 </html>

@@ -1,9 +1,11 @@
 package pt.ulht.es.cookbook.controller;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,8 +25,8 @@ public class RecipeController {
     @RequestMapping(method=RequestMethod.GET, value="/recipes")
     public String listRecipes(Model model) {
 
-       List<Recipe> recipes = new ArrayList<Recipe>(CookbookManager.getRecipes());
-       Collections.sort(recipes, new Recipe.TituloComparator());
+    List<Recipe> recipes = new ArrayList<Recipe>(CookbookManager.getRecipes());
+//       Collections.sort(recipes, new Recipe.TituloComparator());
        model.addAttribute("recipes", recipes);
         
         return "listRecipes";
@@ -40,8 +42,15 @@ public class RecipeController {
     	String problema = params.get("problema");
     	String solucao = params.get("solucao");
     	String autor = params.get("autor");
-    	Recipe recipe = new Recipe(titulo, problema, solucao,autor); 
+
+    	DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy - hh:mm");
+		Date current_date = new Date();
+    	String data = dateFormat.format(current_date);
+    	
+    	Recipe recipe = new Recipe(titulo, problema, solucao ,autor, data); 
     	CookbookManager.saveRecipe(recipe);
+    	
+    	
     	
     	return "redirect:/recipes/"+recipe.getid();
     	
